@@ -16,6 +16,6 @@ export interface QuillHtmlEditButtonOptions {
   editorModules?: {
     // Any modules here will be declared in HTML quill editor instance
   };
-  onSave?() : void;
-  onCancel?() : void;
+  onAfterSave?() : void;
+  onAfterCancel?() : void;
 }
