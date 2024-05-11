@@ -1,4 +1,4 @@
-# quill-html-edit-button
+# quill-html-edit-button-spa
 
 <!-- [START badges] -->
 
