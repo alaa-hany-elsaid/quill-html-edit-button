@@ -1,10 +1,10 @@
 {
-  "name": "quill-html-edit-button",
+  "name": "quill-html-edit-button-spa",
   "description": "A Quill rich text editor Module which adds an html edit button to the quill editor",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/quill.htmlEditButton.min.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/benwinding/quill-html-edit-button",
+  "repository": "https://github.com/alaa-hany-elsaid/quill-html-edit-button",
   "author": "Ben Winding <ben.winding@gmail.com>",
   "license": "MIT",
   "scripts": {
