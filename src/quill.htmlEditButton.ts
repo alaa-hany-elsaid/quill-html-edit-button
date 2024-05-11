@@ -73,7 +73,8 @@ function launchPopupEditor(
   const cancelText = options.cancelText || "Cancel";
   const okText = options.okText || "Ok";
   const closeOnClickOverlay = options.closeOnClickOverlay !== false;
-
+  const onAfterSave = opyions.onAfterSave || () => {};
+  const onAfterCancel = opyions.onAfterCancel || () => {};
   $setAttr(overlayContainer, "class", "ql-html-overlayContainer");
   $setAttr(popupContainer, "class", "ql-html-popupContainer");
   const popupTitle = $create("span");
@@ -129,6 +130,7 @@ function launchPopupEditor(
     } else {
       document.body.removeChild(overlayContainer);
     }
+    onAfterCancel();
   };
 
   if (closeOnClickOverlay) {
@@ -151,6 +153,7 @@ function launchPopupEditor(
     } else {
       document.body.removeChild(overlayContainer);
     }
+    onAfterSave();
   };
 }
 
